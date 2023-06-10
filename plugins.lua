@@ -55,11 +55,6 @@ local plugins = {
     opts = overrides.nvimtree,
   },
 
-  {
-    "nvim-telescope/telescope.nvim",
-    opts = overrides.telescope,
-  },
-
   -- Install a plugin
   {
     "max397574/better-escape.nvim",
@@ -262,36 +257,6 @@ local plugins = {
   },
 
   -- telescope extensions
-  {
-    "telescope.nvim",
-    dependencies = {
-      {
-        "AckslD/nvim-neoclip.lua",
-        lazy = false,
-        opts = {},
-        config = function(_, opts)
-          require("neoclip").setup(opts)
-          require("telescope").load_extension "neoclip"
-        end,
-        keys = {
-          { "<leader>fy", "<Cmd>Telescope neoclip<CR>", desc = "neoclip" },
-        },
-      },
-      { "nvim-telescope/telescope-dap.nvim" },
-      { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-      { "nvim-telescope/telescope-project.nvim" },
-      { "debugloop/telescope-undo.nvim" },
-      {
-        "xiyaowong/telescope-emoji.nvim",
-        lazy = false,
-        config = function()
-          require("telescope").load_extension "emoji"
-        end,
-      },
-      { "LinArcX/telescope-env.nvim" },
-      { "LinArcX/telescope-ports.nvim" },
-    },
-  },
 
   {
     "kevinhwang91/nvim-ufo",
@@ -368,6 +333,7 @@ local plugins = {
     end,
   },
 
+  { import = "custom.telescope" },
   { import = "custom.ui" },
   { import = "custom.dap" },
 }
