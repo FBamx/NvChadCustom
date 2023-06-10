@@ -14,7 +14,6 @@ M.ui = {
   statusline = {
     theme = "default", -- default/vscode/vscode_colored/minimal
     separator_style = "default",
-    overriden_modules = nil,
   },
   cmp = {
     style = "atom_colored",
