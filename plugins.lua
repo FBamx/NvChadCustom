@@ -333,9 +333,9 @@ local plugins = {
     end,
   },
 
-  { import = "custom.telescope" },
-  { import = "custom.ui" },
-  { import = "custom.dap" },
+  { import = "custom.configs.telescope" },
+  { import = "custom.configs.ui" },
+  { import = "custom.configs.dap" },
 }
 
 return plugins
