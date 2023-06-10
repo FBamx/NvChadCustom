@@ -87,6 +87,7 @@ local plugins = {
   -- diffview (git version >= 2.31)
   {
     "sindrets/diffview.nvim",
+    lazy = false,
     dependencies = { -- optional packages
       "nvim-lua/plenary.nvim",
     },
