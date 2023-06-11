@@ -197,4 +197,13 @@ return {
       require("neoscroll").setup()
     end,
   },
+
+  -- zen mode
+  {
+    "folke/zen-mode.nvim",
+    cmd = "ZenMode",
+    config = function()
+      require "custom.configs.zenmode"
+    end,
+  },
 }
