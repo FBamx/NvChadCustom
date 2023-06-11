@@ -59,6 +59,8 @@ M.general = {
     ["<A-j>"] = { "<cmd>m .+1<cr>==", "Move down" },
     ["<A-k>"] = { "<cmd>m .-2<cr>==", "Move up" },
     ["<leader>bb"] = { "<cmd> enew <CR>", "New buffer" },
+    ["<tab>"] = { "gt", "next tab" },
+    ["<S-tab>"] = { "gT", "prior tab" },
   },
   i = {
     ["<A-j>"] = { "<esc><cmd>m .+1<cr>==gi", "Move down" },
