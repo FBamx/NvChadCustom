@@ -15,9 +15,9 @@ M.ui = {
     theme = "default", -- default/vscode/vscode_colored/minimal
     separator_style = "default",
   },
-  -- cmp = {
-  --   style = "atom_colored",
-  -- },
+  cmp = {
+    style = "atom_colored",
+  },
   lsp_semantic_tokens = true,
   nvdash = {
     load_on_startup = true,
