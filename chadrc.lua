@@ -5,8 +5,8 @@ local M = {}
 local highlights = require "custom.highlights"
 
 M.ui = {
-  theme = "oxocarbon",
-  theme_toggle = { "oxocarbon", "one_light" },
+  theme = "catppuccin",
+  theme_toggle = { "catppuccin", "one_light" },
 
   hl_override = highlights.override,
   hl_add = highlights.add,
@@ -21,6 +21,27 @@ M.ui = {
   lsp_semantic_tokens = true,
   nvdash = {
     load_on_startup = true,
+
+    header = {
+      "           ▄ ▄                   ",
+      "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+      "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+      "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+      "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+      "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
+      "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
+      "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
+      "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+    },
+
+    buttons = {
+      { "  Find File", "Spc Spc", "Telescope find_files" },
+      { "  Recent Files", "Spc f r", "Telescope oldfiles" },
+      { "  Find Word", "Spc s g", "Telescope live_grep" },
+      { "  Bookmarks", "Spc b m", "Telescope marks" },
+      { "  Themes", "Spc t h", "Telescope themes" },
+      { "  Mappings", "Spc c h", "NvCheatsheet" },
+    },
   },
 }
 
