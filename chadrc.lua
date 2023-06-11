@@ -19,6 +19,9 @@ M.ui = {
     style = "atom_colored",
   },
   lsp_semantic_tokens = true,
+  nvdash = {
+    load_on_startup = true,
+  },
 }
 
 M.plugins = "custom.plugins"
