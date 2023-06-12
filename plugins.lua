@@ -337,7 +337,7 @@ local plugins = {
   {
     "simrat39/rust-tools.nvim",
     ft = "rust",
-    dependencies = "neovi/nvim-lspconfig",
+    dependencies = "neovim/nvim-lspconfig",
     config = function()
       local on_attach = require("plugins.configs.lspconfig").on_attach
       local capabilities = require("plugins.configs.lspconfig").capabilities
