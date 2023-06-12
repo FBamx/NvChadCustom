@@ -4,6 +4,8 @@ if vim.g.neovide then
   vim.o.guifont = "JetBrainsMono Nerd Font"
   vim.g.neovide_floating_blur_amount_x = 25
   vim.g.neovide_floating_blur_amount_y = 25
+  vim.g.neovide_hide_mouse_when_typing = true
+  vim.keymap.set("i", "<C-v>", "<C-r>+")
 end
 
 -- Highlight on yank
