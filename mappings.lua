@@ -49,6 +49,9 @@ M.disabled = {
       "Toggle comment",
     },
   },
+  t = {
+    ["<C-x>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Escape terminal mode" },
+  },
 }
 
 M.general = {
@@ -69,6 +72,9 @@ M.general = {
   v = {
     ["<A-j>"] = { ":m '>+1<cr>gv=gv", "Move down" },
     ["<A-k>"] = { ":m '<-2<cr>gv=gv", "Move up" },
+  },
+  t = {
+    ["<Esc>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "Escape terminal mode" },
   },
 }
 
