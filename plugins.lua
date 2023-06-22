@@ -361,6 +361,15 @@ local plugins = {
     end,
   },
 
+  -- eyeliner
+  {
+    "jinh0/eyeliner.nvim",
+    lazy = false,
+    opts = {
+      highlight_on_key = true,
+    },
+  },
+
   { import = "custom.configs.telescope" },
   { import = "custom.configs.ui" },
   { import = "custom.configs.dap" },
