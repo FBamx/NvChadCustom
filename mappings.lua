@@ -65,6 +65,7 @@ M.general = {
     ["<tab>"] = { "gt", "next tab" },
     ["<S-tab>"] = { "gT", "prior tab" },
     ["<leader>pw"] = { "<cmd>pwd<CR>", "pwd" },
+    ["<leader>up"] = { "<cmd>NvChadUpdate<CR>", "pwd" },
   },
   i = {
     ["<A-j>"] = { "<esc><cmd>m .+1<cr>==gi", "Move down" },
