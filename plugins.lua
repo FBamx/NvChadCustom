@@ -370,6 +370,18 @@ local plugins = {
     },
   },
 
+  {
+    "simrat39/inlay-hints.nvim",
+    lazy = false,
+    opts = {
+      only_current_line = true,
+
+      eol = {
+        right_align = true,
+      },
+    },
+  },
+
   { import = "custom.configs.telescope" },
   { import = "custom.configs.ui" },
   { import = "custom.configs.dap" },
