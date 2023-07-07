@@ -16,19 +16,19 @@ end
 lspconfig.gopls.setup {
   capabilities = capabilities,
   on_attach = on_attach,
-  settings = {
-    gopls = {
-      hints = {
-        assignVariableTypes = true,
-        compositeLiteralFields = true,
-        compositeLiteralTypes = true,
-        constantValues = true,
-        functionTypeParameters = true,
-        parameterNames = true,
-        rangeVariableTypes = true,
-      },
-    },
-  },
+  -- settings = {
+  --   gopls = {
+  --     hints = {
+  --       assignVariableTypes = true,
+  --       compositeLiteralFields = true,
+  --       compositeLiteralTypes = true,
+  --       constantValues = true,
+  --       functionTypeParameters = true,
+  --       parameterNames = true,
+  --       rangeVariableTypes = true,
+  --     },
+  --   },
+  -- },
 }
 
 -- lspconfig.yamlls.setup {
