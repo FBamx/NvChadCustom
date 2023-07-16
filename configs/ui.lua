@@ -183,12 +183,6 @@ return {
     },
   },
 
-  -- rainbow
-  {
-    "p00f/nvim-ts-rainbow",
-    lazy = false,
-  },
-
   -- scroll
   {
     "karb94/neoscroll.nvim",
