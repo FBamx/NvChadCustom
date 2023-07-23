@@ -56,6 +56,7 @@ M.mason = {
     "prettier",
     "clangd",
     "clang-format",
+    "lemminx",
     "pyright",
     "black",
     "gopls",
