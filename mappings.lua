@@ -151,6 +151,12 @@ M.tabufline = {
       end,
       "close buffer",
     },
+    ["<leader>be"] = {
+      function()
+        require("nvchad_ui.tabufline").closeOtherBufs()
+      end,
+      "close other buffer",
+    }
   },
 }
 
