@@ -19,13 +19,13 @@ M.disabled = {
     -- buffer
     ["<tab>"] = {
       function()
-        require("nvchad_ui.tabufline").tabuflineNext()
+        require("nvchad.tabufline").tabuflineNext()
       end,
       "Goto next buffer",
     },
     ["<S-tab>"] = {
       function()
-        require("nvchad_ui.tabufline").tabuflinePrev()
+        require("nvchad.tabufline").tabuflinePrev()
       end,
       "Goto prev buffer",
     },
@@ -132,14 +132,14 @@ M.tabufline = {
     -- cycle through buffers
     ["<S-l>"] = {
       function()
-        require("nvchad_ui.tabufline").tabuflineNext()
+        require("nvchad.tabufline").tabuflineNext()
       end,
       "goto next buffer",
     },
 
     ["<S-h>"] = {
       function()
-        require("nvchad_ui.tabufline").tabuflinePrev()
+        require("nvchad.tabufline").tabuflinePrev()
       end,
       "goto prev buffer",
     },
